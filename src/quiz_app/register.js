@@ -40,7 +40,7 @@ else if(!gender){
 
 }
 else if(password === pass2){
-fetch("http://localhost:4000/register", {
+fetch("https://ay-quiz-app-server.herokuapp.com/register", {
     method: "POST",
     headers: {"content-type": "application/json"},
     body: JSON.stringify({
