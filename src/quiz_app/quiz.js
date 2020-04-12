@@ -88,8 +88,8 @@ else{
 					<Link to="/Instructions" className="nav-link text-success mt-2 mb-1">View Instructions</Link>
 					<div className="col-md-4 mb-3 pt-5 pb-5 quizcontainer">
 
-						<span className="num">{currentQuestion? currentQuestion.id : null}</span>
-						<p className="question h6">{currentQuestion? currentQuestion.question: null}</p>
+						<span className="num">{currentQuestion? currentQuestion.id : <i className="spinner spinner-sm spinner-border spinner-success"></i>}</span>
+						<p className="question h6">{currentQuestion? currentQuestion.question: <i className="spinner spinner-sm spinner-border spinner-success"></i>}</p>
 						<hr/>
 					{completed ? subVar :  options}
 					
