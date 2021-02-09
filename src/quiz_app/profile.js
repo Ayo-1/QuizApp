@@ -47,12 +47,12 @@ const clr = () => {
         	if(editErr){
         		setEditErr("")
         	}
-        	const emailUrl = "https://cryptic-headland-94862.herokuapp.com/https://ay-quiz-app-server.herokuapp.com/update/email" 
-        	const fullnameUrl = "https://cryptic-headland-94862.herokuapp.com/https://ay-quiz-app-server.herokuapp.com/update/fullname"
-        	const usernameUrl = "https://cryptic-headland-94862.herokuapp.com/https://ay-quiz-app-server.herokuapp.com/update/username"
-        	const nationalityUrl = "https://cryptic-headland-94862.herokuapp.com/https://ay-quiz-app-server.herokuapp.com/update/nationality"
-        	const genderUrl = "https://cryptic-headland-94862.herokuapp.com/https://ay-quiz-app-server.herokuapp.com/update/gender"
-        	const dobUrl = "https://cryptic-headland-94862.herokuapp.com/https://ay-quiz-app-server.herokuapp.com/update/dob"
+        	const emailUrl = "https://ay-quiz-app-server.herokuapp.com/update/email" 
+        	const fullnameUrl = "https://ay-quiz-app-server.herokuapp.com/update/fullname"
+        	const usernameUrl = "https://ay-quiz-app-server.herokuapp.com/update/username"
+        	const nationalityUrl = "https://ay-quiz-app-server.herokuapp.com/update/nationality"
+        	const genderUrl = "https://ay-quiz-app-server.herokuapp.com/update/gender"
+        	const dobUrl = "https://ay-quiz-app-server.herokuapp.com/update/dob"
          if(editItem === "email"){
                update(email, emailUrl, editItem)
        }  
