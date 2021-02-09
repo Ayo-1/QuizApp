@@ -40,7 +40,7 @@ else if(!gender){
 
 }
 else if(password === pass2){
-fetch("https://ay-quiz-app-server.herokuapp.com/register", {
+fetch("https://cryptic-headland-94862.herokuapp.com/https://ay-quiz-app-server.herokuapp.com/register", {
     method: "POST",
     headers: {"content-type": "application/json"},
     body: JSON.stringify({
