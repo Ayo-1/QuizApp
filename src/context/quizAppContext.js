@@ -33,7 +33,7 @@ export const QuizAppContextProvider = props => {
 	const submit = () => {
 		const score = Math.ceil( mark * correct)
 		setResultLoading(true)
-		fetch("https://cryptic-headland-94862.herokuapp.com/https://ay-quiz-app-server.herokuapp.com/results/submit", {
+		fetch("https://ay-quiz-app-server.herokuapp.com/results/submit", {
 			method: "POST",
 			headers: {"content-type": "application/json"},
 			body: JSON.stringify({
@@ -85,7 +85,7 @@ export const QuizAppContextProvider = props => {
 
 
 const getUser = (token) => {
-	fetch(`https://cryptic-headland-94862.herokuapp.com/https://ay-quiz-app-server.herokuapp.com/user`, {
+	fetch(`https://ay-quiz-app-server.herokuapp.com/user`, {
 			method: "POST", 
 			headers: {"content-type": "application/json"},
 			body: JSON.stringify({
@@ -101,7 +101,7 @@ const getUser = (token) => {
 
 const login = (emailAd, pass) => {
 setAuthLoading(true)
-	fetch("https://cryptic-headland-94862.herokuapp.com/https://ay-quiz-app-server.herokuapp.com/login", {
+	fetch("https://ay-quiz-app-server.herokuapp.com/login", {
 		method: "POST", 
 		headers: {"content-type": "application/json"},
 		body: JSON.stringify({
