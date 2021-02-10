@@ -112,6 +112,7 @@ setAuthLoading(true)
 	.then(res => res.json()
 		)
 	.then(res => {
+		console.log(res)
 		if(res.err){
 			setAuthErr(res.err)
 			setAuthLoading(false)
@@ -128,7 +129,7 @@ setAuthLoading(true)
 	}
 }).catch(err => {
 	if(err){
-		
+		console.log(err)
 		setAuthErr("connection error")
 		setAuthLoading(false)
 	}
